@@ -45,12 +45,6 @@ class ProductListUsedByTableMapper implements ProductListUsedByTableMapperInterf
      */
     protected const PARAM_ID_MERCHANT_RELATIONSHIP = 'id-merchant-relationship';
 
-    /**
-     * @param \Generated\Shared\Transfer\MerchantRelationshipTransfer $merchantRelationshipTransfer
-     * @param \Generated\Shared\Transfer\ProductListUsedByTableRowTransfer $productListUsedByTableRowTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductListUsedByTableRowTransfer
-     */
     public function mapMerchantRelationshipTransferToProductListUsedByTableRowTransfer(
         MerchantRelationshipTransfer $merchantRelationshipTransfer,
         ProductListUsedByTableRowTransfer $productListUsedByTableRowTransfer
@@ -64,11 +58,6 @@ class ProductListUsedByTableMapper implements ProductListUsedByTableMapperInterf
         return $productListUsedByTableRowTransfer;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\MerchantRelationshipTransfer $merchantRelationshipTransfer
-     *
-     * @return \Generated\Shared\Transfer\ButtonCollectionTransfer
-     */
     protected function createActionButtons(MerchantRelationshipTransfer $merchantRelationshipTransfer): ButtonCollectionTransfer
     {
         $buttonCollectionTransfer = new ButtonCollectionTransfer();
@@ -78,12 +67,6 @@ class ProductListUsedByTableMapper implements ProductListUsedByTableMapperInterf
         return $buttonCollectionTransfer;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ButtonCollectionTransfer $buttonCollectionTransfer
-     * @param \Generated\Shared\Transfer\MerchantRelationshipTransfer $merchantRelationshipTransfer
-     *
-     * @return \Generated\Shared\Transfer\ButtonCollectionTransfer
-     */
     protected function addEditButton(
         ButtonCollectionTransfer $buttonCollectionTransfer,
         MerchantRelationshipTransfer $merchantRelationshipTransfer

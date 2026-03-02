@@ -31,9 +31,6 @@ class ProductListMerchantRelationshipFormExpander implements ProductListMerchant
      */
     protected $productListMerchantRelationshipFormDataProvider;
 
-    /**
-     * @param \Spryker\Zed\MerchantRelationshipProductListGui\Communication\DataProvider\ProductListMerchantRelationshipFormDataProvider $productListMerchantRelationshipFormDataProvider
-     */
     public function __construct(
         ProductListMerchantRelationshipFormDataProvider $productListMerchantRelationshipFormDataProvider
     ) {

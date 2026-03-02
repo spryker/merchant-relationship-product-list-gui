@@ -31,33 +31,21 @@ use Spryker\Zed\MerchantRelationshipProductListGui\MerchantRelationshipProductLi
  */
 class MerchantRelationshipProductListGuiCommunicationFactory extends AbstractCommunicationFactory
 {
-    /**
-     * @return \Spryker\Zed\MerchantRelationshipProductListGui\Communication\DataProvider\MerchantRelationshipChoiceFormDataProvider
-     */
     public function createMerchantRelationshipChoiceFormDataProvider(): MerchantRelationshipChoiceFormDataProvider
     {
         return new MerchantRelationshipChoiceFormDataProvider($this->getMerchantRelationshipFacade());
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantRelationshipProductListGui\Communication\Form\MerchantRelationshipChoiceFormType
-     */
     public function createMerchantRelationshipChoiceFormType(): MerchantRelationshipChoiceFormType
     {
         return new MerchantRelationshipChoiceFormType();
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantRelationshipProductListGui\Communication\Expander\ProductListButtonsExpanderInterface
-     */
     public function createProductListButtonsExpander(): ProductListButtonsExpanderInterface
     {
         return new ProductListButtonsExpander();
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantRelationshipProductListGui\Communication\Expander\ProductListUsedByTableExpanderInterface
-     */
     public function createProductListUsedByTableExpander(): ProductListUsedByTableExpanderInterface
     {
         return new ProductListUsedByTableExpander(
@@ -67,41 +55,26 @@ class MerchantRelationshipProductListGuiCommunicationFactory extends AbstractCom
         );
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantRelationshipProductListGui\Communication\Mapper\ProductListUsedByTableMapperInterface
-     */
     public function createProductListUsedByTableMapper(): ProductListUsedByTableMapperInterface
     {
         return new ProductListUsedByTableMapper();
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantRelationshipProductListGui\Dependency\Facade\MerchantRelationshipProductListGuiToMerchantRelationshipFacadeInterface
-     */
     public function getMerchantRelationshipFacade(): MerchantRelationshipProductListGuiToMerchantRelationshipFacadeInterface
     {
         return $this->getProvidedDependency(MerchantRelationshipProductListGuiDependencyProvider::FACADE_MERCHANT_RELATIONSHIP);
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantRelationshipProductListGui\Dependency\Facade\MerchantRelationshipProductListGuiToMerchantRelationshipProductListFacadeInterface
-     */
     public function getMerchantRelationshipProductListFacade(): MerchantRelationshipProductListGuiToMerchantRelationshipProductListFacadeInterface
     {
         return $this->getProvidedDependency(MerchantRelationshipProductListGuiDependencyProvider::FACADE_MERCHANT_RELATIONSHIP_PRODUCT_LIST);
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantRelationshipProductListGui\Communication\ProductListQueryExpander\ProductListQueryExpanderInterface
-     */
     public function createProductListQueryExpander(): ProductListQueryExpanderInterface
     {
         return new ProductListQueryExpander();
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantRelationshipProductListGui\Communication\FormExpander\ProductListMerchantRelationshipFormExpanderInterface
-     */
     public function createProductListMerchantRelationshipFormExpander(): ProductListMerchantRelationshipFormExpanderInterface
     {
         return new ProductListMerchantRelationshipFormExpander(
@@ -109,9 +82,6 @@ class MerchantRelationshipProductListGuiCommunicationFactory extends AbstractCom
         );
     }
 
-    /**
-     * @return \Spryker\Zed\MerchantRelationshipProductListGui\Communication\DataProvider\ProductListMerchantRelationshipFormDataProvider
-     */
     public function createProductListMerchantRelationshipFormDataProvider(): ProductListMerchantRelationshipFormDataProvider
     {
         return new ProductListMerchantRelationshipFormDataProvider(

@@ -23,9 +23,6 @@ class MerchantRelationshipChoiceFormDataProvider
      */
     protected $merchantRelationshipFacade;
 
-    /**
-     * @param \Spryker\Zed\MerchantRelationshipProductListGui\Dependency\Facade\MerchantRelationshipProductListGuiToMerchantRelationshipFacadeInterface $merchantRelationshipFacade
-     */
     public function __construct(MerchantRelationshipProductListGuiToMerchantRelationshipFacadeInterface $merchantRelationshipFacade)
     {
         $this->merchantRelationshipFacade = $merchantRelationshipFacade;
@@ -41,9 +38,6 @@ class MerchantRelationshipChoiceFormDataProvider
         ];
     }
 
-    /**
-     * @return array
-     */
     protected function getMerchantRelationshipChoices(): array
     {
         $result = [];

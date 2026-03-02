@@ -27,11 +27,6 @@ class MerchantRelationshipProductListGuiDependencyProvider extends AbstractBundl
      */
     public const FACADE_MERCHANT_RELATIONSHIP_PRODUCT_LIST = 'FACADE_MERCHANT_RELATIONSHIP_PRODUCT_LIST';
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     public function provideCommunicationLayerDependencies(Container $container): Container
     {
         $container = parent::provideCommunicationLayerDependencies($container);
@@ -41,11 +36,6 @@ class MerchantRelationshipProductListGuiDependencyProvider extends AbstractBundl
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addMerchantRelationshipFacade(Container $container): Container
     {
         $container->set(static::FACADE_MERCHANT_RELATIONSHIP, function ($container) {
@@ -55,11 +45,6 @@ class MerchantRelationshipProductListGuiDependencyProvider extends AbstractBundl
         return $container;
     }
 
-    /**
-     * @param \Spryker\Zed\Kernel\Container $container
-     *
-     * @return \Spryker\Zed\Kernel\Container
-     */
     protected function addMerchantRelationshipProductListFacade(Container $container): Container
     {
         $container->set(static::FACADE_MERCHANT_RELATIONSHIP_PRODUCT_LIST, function ($container) {

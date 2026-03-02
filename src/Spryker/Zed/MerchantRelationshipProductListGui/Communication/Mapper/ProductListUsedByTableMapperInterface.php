@@ -12,12 +12,6 @@ use Generated\Shared\Transfer\ProductListUsedByTableRowTransfer;
 
 interface ProductListUsedByTableMapperInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\MerchantRelationshipTransfer $merchantRelationshipTransfer
-     * @param \Generated\Shared\Transfer\ProductListUsedByTableRowTransfer $productListUsedByTableRowTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductListUsedByTableRowTransfer
-     */
     public function mapMerchantRelationshipTransferToProductListUsedByTableRowTransfer(
         MerchantRelationshipTransfer $merchantRelationshipTransfer,
         ProductListUsedByTableRowTransfer $productListUsedByTableRowTransfer

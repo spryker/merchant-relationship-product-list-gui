@@ -33,11 +33,6 @@ class ProductListUsedByTableExpander implements ProductListUsedByTableExpanderIn
      */
     protected $productListUsedByTableMapper;
 
-    /**
-     * @param \Spryker\Zed\MerchantRelationshipProductListGui\Dependency\Facade\MerchantRelationshipProductListGuiToMerchantRelationshipFacadeInterface $merchantRelationshipFacade
-     * @param \Spryker\Zed\MerchantRelationshipProductListGui\Dependency\Facade\MerchantRelationshipProductListGuiToMerchantRelationshipProductListFacadeInterface $merchantRelationshipProductListFacade
-     * @param \Spryker\Zed\MerchantRelationshipProductListGui\Communication\Mapper\ProductListUsedByTableMapperInterface $productListUsedByTableMapper
-     */
     public function __construct(
         MerchantRelationshipProductListGuiToMerchantRelationshipFacadeInterface $merchantRelationshipFacade,
         MerchantRelationshipProductListGuiToMerchantRelationshipProductListFacadeInterface $merchantRelationshipProductListFacade,
@@ -48,11 +43,6 @@ class ProductListUsedByTableExpander implements ProductListUsedByTableExpanderIn
         $this->merchantRelationshipProductListFacade = $merchantRelationshipProductListFacade;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductListUsedByTableTransfer $productListUsedByTableTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductListUsedByTableTransfer
-     */
     public function expandTableData(ProductListUsedByTableTransfer $productListUsedByTableTransfer): ProductListUsedByTableTransfer
     {
         $productListUsedByTableTransfer->getProductList()->requireIdProductList();

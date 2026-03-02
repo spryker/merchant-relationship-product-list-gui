@@ -13,11 +13,6 @@ use Spryker\Zed\MerchantRelationshipProductListGui\Persistence\MerchantRelations
 
 class ProductListQueryExpander implements ProductListQueryExpanderInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\QueryCriteriaTransfer $queryCriteriaTransfer
-     *
-     * @return \Generated\Shared\Transfer\QueryCriteriaTransfer
-     */
     public function buildProductListMerchantQueryCriteria(QueryCriteriaTransfer $queryCriteriaTransfer): QueryCriteriaTransfer
     {
         return $queryCriteriaTransfer

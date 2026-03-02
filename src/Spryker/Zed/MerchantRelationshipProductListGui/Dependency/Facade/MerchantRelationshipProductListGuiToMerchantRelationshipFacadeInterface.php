@@ -24,10 +24,5 @@ interface MerchantRelationshipProductListGuiToMerchantRelationshipFacadeInterfac
         ?MerchantRelationshipCriteriaTransfer $merchantRelationshipCriteriaTransfer = null
     );
 
-    /**
-     * @param \Generated\Shared\Transfer\MerchantRelationshipTransfer $merchantRelationshipTransfer
-     *
-     * @return \Generated\Shared\Transfer\MerchantRelationshipTransfer
-     */
     public function getMerchantRelationshipById(MerchantRelationshipTransfer $merchantRelationshipTransfer): MerchantRelationshipTransfer;
 }

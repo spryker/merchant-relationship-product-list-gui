@@ -25,11 +25,6 @@ class MerchantRelationshipProductListGuiToMerchantRelationshipProductListFacadeB
         $this->merchantRelationshipProductListFacade = $merchantRelationshipProductListFacade;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\MerchantRelationshipTransfer $merchantRelationshipTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductListCollectionTransfer
-     */
     public function getAvailableProductListsForMerchantRelationship(MerchantRelationshipTransfer $merchantRelationshipTransfer): ProductListCollectionTransfer
     {
         return $this->merchantRelationshipProductListFacade->getAvailableProductListsForMerchantRelationship($merchantRelationshipTransfer);

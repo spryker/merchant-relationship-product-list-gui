@@ -20,9 +20,6 @@ class ProductListMerchantRelationshipFormDataProvider
      */
     protected $merchantRelationshipProductListFacade;
 
-    /**
-     * @param \Spryker\Zed\MerchantRelationshipProductListGui\Dependency\Facade\MerchantRelationshipProductListGuiToMerchantRelationshipProductListFacadeInterface $merchantRelationshipProductListFacade
-     */
     public function __construct(
         MerchantRelationshipProductListGuiToMerchantRelationshipProductListFacadeInterface $merchantRelationshipProductListFacade
     ) {
@@ -86,11 +83,6 @@ class ProductListMerchantRelationshipFormDataProvider
         return $assignedProductListIds;
     }
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductListTransfer $productListTransfer
-     *
-     * @return string
-     */
     protected function generateProductListChoiceLabel(ProductListTransfer $productListTransfer): string
     {
         return sprintf('%s (%s)', $productListTransfer->getTitle(), $productListTransfer->getType());

@@ -12,11 +12,6 @@ use Generated\Shared\Transfer\ProductListCollectionTransfer;
 
 interface MerchantRelationshipProductListGuiToMerchantRelationshipProductListFacadeInterface
 {
-    /**
-     * @param \Generated\Shared\Transfer\MerchantRelationshipTransfer $merchantRelationshipTransfer
-     *
-     * @return \Generated\Shared\Transfer\ProductListCollectionTransfer
-     */
     public function getAvailableProductListsForMerchantRelationship(MerchantRelationshipTransfer $merchantRelationshipTransfer): ProductListCollectionTransfer;
 
     /**
