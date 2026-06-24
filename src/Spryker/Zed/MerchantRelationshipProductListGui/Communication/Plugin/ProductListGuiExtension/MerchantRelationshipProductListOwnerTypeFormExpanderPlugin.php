@@ -20,6 +20,8 @@ use Symfony\Component\Form\FormBuilderInterface;
 class MerchantRelationshipProductListOwnerTypeFormExpanderPlugin extends AbstractPlugin implements ProductListOwnerTypeFormExpanderPluginInterface
 {
     /**
+     * @api
+     *
      * @var string
      */
     public const OWNER_TYPE = 'Merchant Relationship';
